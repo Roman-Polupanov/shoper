@@ -10,7 +10,7 @@ function App() {
       <Route path="/all" element={<All />} />
       <Route path="/favorites" element={<Favorites />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/sorting" element={<Sortbar />} />
+      {/* <Route path="/sorting" element={<Sortbar />} /> */}
     </Routes>
   </BrowserRouter>
   );

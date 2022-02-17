@@ -6,7 +6,7 @@ const Card = ({ id, name, image, price }) => {
         <Good_image src={image} />
         <Button_price>
             <Price key={id}>
-                <Good_price>{price}</Good_price>
+                <Good_price>${price}</Good_price>
             </Price>
             <Price as="a" href="#">buy</Price>
             <Price as="a" href="#">like it</Price>
