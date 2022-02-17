@@ -5,9 +5,7 @@ import Card from '../card/Card';
 import { Cards_container } from '../card/Card.styles';
 
 const Sortbar = () => {
-
     const [list, setList] = useState(data);
-
     const handleSort = type => {
         const draftList = [...list];
         switch (type) {
