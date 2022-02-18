@@ -3,12 +3,15 @@ import data from '../../mock/data';
 import React, { useState } from 'react';
 
 const Card = ({ id, name, image, price, like }) => {
-    const [list, setLike] = useState(data);
+    const [allCards, setAllCards] = useState(data);
 
-    const handleClick = () => {
-        const draftList = [...list];
-        setLike(draftList)
-    }
+    const likeButtonHandler = (id) => {
+        setAllCards(
+            allCards.map((item) =>
+                item.id === id ? { ...item, like: !item.like } : item
+            )
+        );
+    };
 
     return (<Card_uno key={id}>
         <Good_name>{name}</Good_name>
@@ -17,8 +20,8 @@ const Card = ({ id, name, image, price, like }) => {
             <Good_price>{price}$</Good_price>
             <Price>buy</Price>
 
-            <Price onClick={() => handleClick(id)}>
-                {like ? "like me" : "unlike me"}
+            <Price onClick={() => likeButtonHandler(id)}>
+                {like ? "liked" : "like me"}
             </Price>
 
         </Button_price>

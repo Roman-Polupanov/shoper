@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Good_image = styled.img`
-    :hover {
-    transform: scale(1.1);
-  }`;
+    :hover {transform: scale(1.1);}`;
 
 export const Good_name = styled.div``;
 
@@ -33,9 +31,7 @@ export const Price = styled.button`
     padding: 15px;
     text-decoration: none;
     cursor: pointer;
-    :hover {
-       color: rgb(199, 14, 255);
-    }
+    :hover {color: rgb(199, 14, 255);}
 `;
 
 export const Button_price = styled.div`
