@@ -28,12 +28,12 @@ const Sortbar = () => {
             <Sort_cont>
                 <All_button as="a" href="/">All</All_button>
                 <Dropdown>
-                    <Dropbtn>Sorting</Dropbtn>
                     <Dropbtn_content>
-                        <Sort onClick={() => handleSort('Switch0')}>Sort by name</Sort>
-                        <Sort onClick={() => handleSort('Switch1')}>Sort by price low first</Sort>
-                        <Sort onClick={() => handleSort('Switch2')}>Sort by price high first</Sort>
+                        <Sort onClick={() => handleSort('Switch0')}>Name</Sort>
+                        <Sort onClick={() => handleSort('Switch1')}>Price: Low to High</Sort>
+                        <Sort onClick={() => handleSort('Switch2')}>Price: High to Low</Sort>
                     </Dropbtn_content>
+                    <Dropbtn>Sort by:</Dropbtn>
                 </Dropdown >
             </Sort_cont>
             <Cards_container>

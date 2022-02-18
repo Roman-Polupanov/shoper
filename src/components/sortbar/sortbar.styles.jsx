@@ -9,9 +9,7 @@ export const Sort = styled.div`
     text-decoration: none;
     display: block;
     background-color:  rgb(255, 185, 72);
-    :hover {
-        color: rgb(199, 14, 255);
-    }
+    :hover {color: rgb(199, 14, 255);}
     `;
 
 export const Dropbtn_content = styled.div`
@@ -20,6 +18,7 @@ export const Dropbtn_content = styled.div`
     position: absolute;
     min-width: 160px;
     z-index: 1;
+    :hover {display: block;};
     `;
 
 export const Dropbtn = styled.button`
@@ -29,6 +28,7 @@ export const Dropbtn = styled.button`
     font-size: 16px;
     border: none;
     cursor: pointer;
+    :hover {display: block;};
     `;
 
 export const Dropdown = styled.div`
@@ -37,8 +37,7 @@ export const Dropdown = styled.div`
     display: inline-block;
     cursor: pointer;
     &:hover ${Dropbtn} {background-color: rgb(255, 185, 72);}
-    &:hover ${Dropbtn_content} {display: block;
-        }
+    &:active ${Dropbtn_content} {display: block;}
     `;
 
 export const All_button = styled.div`
