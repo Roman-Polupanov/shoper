@@ -7,7 +7,7 @@ import Sortbar from './components/sortbar/sortbar';
 function App() {
   return (<BrowserRouter>
     <Routes>
-      <Route path="/all" element={<All />} />
+      <Route path="/" element={<All />} />
       <Route path="/favorites" element={<Favorites />} />
       <Route path="/cart" element={<Cart />} />
       {/* <Route path="/sorting" element={<Sortbar />} /> */}

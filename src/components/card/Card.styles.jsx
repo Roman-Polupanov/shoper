@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Good_image = styled.img`
     :hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }`;
 
 export const Good_name = styled.div``;
 
-export const Good_price = styled.div``;
+export const Good_price = styled.div`
+    padding: 15px;
+`;
 
 export const Cards_container = styled.div`
     display: flex;
@@ -25,12 +27,14 @@ export const Card_uno = styled.div`
     
 `;
 
-export const Price = styled.div`
-    color: rgb(226, 5, 255);
+export const Price = styled.button`
+    background-color: rgb(255, 185, 72);
+    border: none;
     padding: 15px;
     text-decoration: none;
+    cursor: pointer;
     :hover {
-    color: rgb(19, 0, 22);
+       color: rgb(199, 14, 255);
     }
 `;
 
@@ -38,7 +42,7 @@ export const Button_price = styled.div`
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 180, 60);
+    background-color: rgb(255, 185, 72);
     word-break: break-all;
     width: 100%;
 `;
