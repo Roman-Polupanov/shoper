@@ -1,7 +1,7 @@
-import All from "./All/All";
-import Cart from "./Cart/Cart";
-import Favorites from "./Favorites/Favorites";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import All from './All/All';
+import Cart from './Cart/Cart';
+import Favorites from './Favorites/Favorites';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

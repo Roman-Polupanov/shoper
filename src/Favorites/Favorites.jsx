@@ -1,5 +1,5 @@
-import Header from "../components/header/Header";
-import { Favor_container } from "./Favorites.styles";
+import Header from '../components/header/Header';
+import { Favor_container } from './Favorites.styles';
 
 const Favorites = () => {
   return (

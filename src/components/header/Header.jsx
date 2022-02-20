@@ -1,8 +1,8 @@
-import { Label_name, Line, Navi_list } from "./Header.styles";
-import { Navi_all } from "./Header.styles";
-import { Navi_link } from "./Header.styles";
-import { Navi_favor } from "./Header.styles";
-import { Head_wrap } from "./Header.styles";
+import { Label_name, Line, Navi_list } from './Header.styles';
+import { Navi_all } from './Header.styles';
+import { Navi_link } from './Header.styles';
+import { Navi_favor } from './Header.styles';
+import { Head_wrap } from './Header.styles';
 
 const Header = () => {
   return (

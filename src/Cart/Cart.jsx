@@ -1,5 +1,5 @@
-import Header from "../components/header/Header";
-import { Cart_container } from "./Cart.styles";
+import Header from '../components/header/Header';
+import { Cart_container } from './Cart.styles';
 
 const Cart = () => {
   return (

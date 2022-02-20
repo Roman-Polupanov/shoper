@@ -1,12 +1,5 @@
-import {
-  Card_uno,
-  Good_name,
-  Button_price,
-  Price,
-  Good_image,
-  Good_price,
-} from "./Card.styles";
-import React, { useState } from "react";
+import { Card_uno, Good_name, Button_price, Price, Good_image, Good_price } from './Card.styles';
+import React, { useState } from 'react';
 
 const Card = ({ id, name, image, price, like }) => {
   const [isLiked, setIsLiked] = useState(like);
@@ -22,9 +15,7 @@ const Card = ({ id, name, image, price, like }) => {
       <Button_price>
         <Good_price>{price}$</Good_price>
         <Price>buy</Price>
-        <Price onClick={() => likeButtonHandler(id)}>
-          {isLiked ? "liked" : "like me"}
-        </Price>
+        <Price onClick={() => likeButtonHandler(id)}>{isLiked ? 'liked' : 'like me'}</Price>
       </Button_price>
     </Card_uno>
   );
