@@ -1,3 +1,4 @@
+import React from 'react';
 import All from './All/All';
 import Cart from './Cart/Cart';
 import Favorites from './Favorites/Favorites';

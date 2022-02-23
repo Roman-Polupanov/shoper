@@ -1,11 +1,15 @@
 import Header from '../components/header/Header';
 import { Cart_container } from './Cart.styles';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
+  // const goods = useSelector(state => state.goods)
   return (
     <Cart_container>
       <Header />
-      CART
+      {/* <div>{goods}</div> */}
+
     </Cart_container>
   );
 };
