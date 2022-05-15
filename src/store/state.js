@@ -1,9 +1,6 @@
-import data from "../mock/data"
+import data from '../mock/data'
 
-const initialState = {
+export const initialState = {
     goods: data,
     cart: [],
-    // favorite: []
 }
-
-export default initialState;

@@ -1,16 +1,11 @@
-import { ADD_GOOD_TO_CART, ADD_LIKED_TO_FAVORITE, REMOVE_GOOD_FROM_CART } from "./actionTypes";
+import { ADD_CARD_TO_CART, DEL_CARD_FROM_CART } from "./action_type";
 
-export const addGoodToCart = (good) => ({
-    type: ADD_GOOD_TO_CART,
+export const addCardtoCart = (good) => ({
+    type: ADD_CARD_TO_CART,
     value: good
 });
 
-// export const addLikedToFavorite = (liked) => ({
-//     type: ADD_LIKED_TO_FAVORITE,
-//     value: liked
-// });
-
-// export const removeGoodFromCart = (good) => ({
-//     type: REMOVE_GOOD_FROM_CART,
-//     value: good
-// });
+export const delCardfromCart = (good) => ({
+    type: DEL_CARD_FROM_CART,
+    value: good
+});

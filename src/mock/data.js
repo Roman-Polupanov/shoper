@@ -1,43 +1,50 @@
+import nutella from './images/10.png';
+import kokos from './images/9.png';
+import zavarnoy from './images/8.png';
+import klubnika from './images/Ring-Klubnika.png';
+import chernika from './images/5.png';
+import edinorog from './images/edinorog.png';
+
 const data = [
   {
     id: 1,
     name: 'Шелл с NUTELLA',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/4c5/8.png',
+    image: nutella,
     price: 19,
     like: false,
   },
   {
     id: 2,
     name: 'Шелл Кокосовый Рафаэль',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/6fd/9.png',
+    image: kokos,
     price: 25,
     like: false,
   },
   {
     id: 3,
     name: 'Шелл с Заварным баварским кремом',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/f2f/10.png',
+    image: zavarnoy,
     price: 17,
     like: false,
   },
   {
     id: 4,
     name: 'Ринг Клубничный',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/ad7/Ring-Klubnika.png',
+    image: klubnika,
     price: 18,
     like: false,
   },
   {
     id: 5,
     name: 'Шелл Черничный чизкейк',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/0e7/5.png',
+    image: chernika,
     price: 29,
     like: false,
   },
   {
     id: 6,
-    name: 'Шелл Банановый',
-    image: 'http://dunkindonutsmoscow.ru/upload/iblock/ab0/1.png',
+    name: 'Ринг Единорог',
+    image: edinorog,
     price: 16,
     like: false,
   },

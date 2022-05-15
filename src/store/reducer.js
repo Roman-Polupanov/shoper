@@ -1,28 +1,17 @@
-import { createStore } from 'redux'
-import initialState from './state';
+import { initialState } from "./state";
 
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'ADD_GOOD_TO_CART':
+        case 'ADD_CARD_TO_CART':
+            let add = [...state.cart]
+            add.push(action.value)
+            return { ...state, add }
+        case 'DEL_CARD_FROM_CART':
             let cart = [...state.cart]
-            cart.push(action.value)
+            cart.shift(action.value)
             return { ...state, cart }
-
-        // case 'REMOVE_GOOD_FROM_CART':
-        //     let cartRemv = [...state.cartRemv]
-        //     cartRemv.pop(action.value)
-        //     return { ...state, cartRemv }
-
-        // case 'ADD_LIKED_TO_FAVORITE':
-        //     let favorite = [...state.favorite]
-        //     favorite.push(action.value)
-        //     return { ...state, favorite }
-
         default:
-            return state;
+            return state
     }
 }
 
-export const store = createStore(reducer, initialState)
-
-console.log(store.getState())
